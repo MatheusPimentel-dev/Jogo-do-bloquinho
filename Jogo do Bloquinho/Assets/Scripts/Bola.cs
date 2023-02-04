@@ -11,6 +11,10 @@ public class Bola : MonoBehaviour
 
     public AudioSource somDaBola;
 
+    public float direcaoAleatoriaX;
+
+    public float direcaoAleatoriaY;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,5 +43,6 @@ public class Bola : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         somDaBola.Play();
+        oRigidbody2D.velocity += new Vector2(direcaoAleatoriaX, direcaoAleatoriaY);
     }
 }

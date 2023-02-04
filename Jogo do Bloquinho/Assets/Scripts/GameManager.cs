@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {        
-        
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SairDoJogo();
     }
 
     public void AumentarQuantidadeDeBlocos()
@@ -35,5 +36,10 @@ public class GameManager : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
+    }
+
+    private void SairDoJogo()
+    {
+        Application.Quit();
     }
 }

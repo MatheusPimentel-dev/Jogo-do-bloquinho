@@ -1007,6 +1007,8 @@ MonoBehaviour:
   direcaoy: 10
   oRigidbody2D: {fileID: 1539199312}
   somDaBola: {fileID: 1539199315}
+  direcaoAleatoriaX: 0.2
+  direcaoAleatoriaY: 0.2
 --- !u!82 &1539199315
 AudioSource:
   m_ObjectHideFlags: 0
